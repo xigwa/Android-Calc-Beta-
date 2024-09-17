@@ -1,0 +1,5 @@
+<!-- res/drawable/round_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#e82a8f"/> <!-- Цвет кнопки -->
+    <corners android:radius="150dp"/> <!-- Радиус скругления для круглой формы -->
+</shape>
