@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonPercent).setOnClickListener(v -> {
         });
     }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);

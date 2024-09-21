@@ -5,31 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Включение кнопок чисел -->
+
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="340dp"
-        android:layout_height="63dp"
+        android:layout_width="317dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="48dp"
         android:background="#E0E0E0"
         android:gravity="end"
         android:padding="16dp"
         android:text="0"
         android:textSize="25sp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <include
         layout="@layout/numbers"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <!-- Включение кнопок операторов -->
+
     <include
         layout="@layout/operators"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <!-- Включение специальных кнопок -->
+
     <include
         layout="@layout/special_buttons"
         app:layout_constraintTop_toBottomOf="@id/textView" />
