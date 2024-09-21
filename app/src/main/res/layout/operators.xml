@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        style="@style/CalculatorButton"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@id/button6"
+        app:layout_constraintBottom_toTopOf="@id/buttonPlus" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        style="@style/CalculatorButton"
+        android:text="×"
+        app:layout_constraintStart_toEndOf="@id/button3"
+        app:layout_constraintBottom_toTopOf="@id/buttonSubtract" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        style="@style/CalculatorButton"
+        android:text="÷"
+        app:layout_constraintStart_toEndOf="@+id/buttonPercent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMultiply"
+         />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        style="@style/CalculatorButton"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/equals" />
+    <Button
+        android:id="@+id/buttonPercent"
+        style="@style/CalculatorButton"
+        android:text="%"
+        app:layout_constraintStart_toEndOf="@+id/buttonParentheses"
+        app:layout_constraintBottom_toTopOf="@id/button3"
+        />
+</merge>

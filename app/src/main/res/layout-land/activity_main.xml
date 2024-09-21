@@ -3,27 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <!-- Экран для отображения чисел -->
+    android:layout_height="match_parent">
 
     <!-- Включение кнопок чисел -->
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="93dp"
-        android:layout_margin="16dp"
-        android:layout_marginTop="176dp"
+        android:layout_width="340dp"
+        android:layout_height="63dp"
         android:background="#E0E0E0"
         android:gravity="end"
         android:padding="16dp"
         android:text="0"
         android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <include
@@ -41,4 +35,3 @@
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
