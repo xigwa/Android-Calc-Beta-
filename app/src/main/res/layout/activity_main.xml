@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Экран для отображения чисел -->
-
-    <!-- Включение кнопок чисел -->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -30,12 +26,10 @@
         layout="@layout/numbers"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <!-- Включение кнопок операторов -->
     <include
         layout="@layout/operators"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <!-- Включение специальных кнопок -->
     <include
         layout="@layout/special_buttons"
         app:layout_constraintTop_toBottomOf="@id/textView" />
