@@ -20,17 +20,25 @@
     <Button
         android:id="@+id/buttonDel"
         style="@style/CalculatorButton"
-        android:text="Del"
-        android:textSize="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
+        android:text="⌫"
         app:layout_constraintStart_toEndOf="@+id/button0"
-        android:layout_height="wrap_content" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <Button
         android:id="@+id/equals"
         style="@style/CalculatorButton"
         android:text="="
-        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonDel"
         />
-
+    <!--<ImageButton
+        android:id="@+id/ButtonSet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/pngwing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp" /> -->
 </merge>

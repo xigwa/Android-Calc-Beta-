@@ -3,7 +3,9 @@
     <style name="CalculatorButton">
         <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginStart">30dp</item>
         <item name="android:textSize">25sp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/rounded_textview</item>
     </style>
 </resources>

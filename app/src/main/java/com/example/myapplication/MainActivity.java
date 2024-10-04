@@ -1,11 +1,14 @@
 package com.example.myapplication;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 import androidx.appcompat.app.AppCompatActivity;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         display = findViewById(R.id.textView);
+
+//        ImageButton buttonSet = findViewById(R.id.ButtonSet);
+//
+//        buttonSet.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         findViewById(R.id.buttonComma).setOnClickListener(v -> {
             String currentText = display.getText().toString();
@@ -71,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             String currentText = display.getText().toString();
             if (currentText.contains("("))
                 display.setText(currentText + ")");
-             else
+            else
                 display.setText(currentText + "(");
         });
         findViewById(R.id.buttonPercent).setOnClickListener(v -> {
@@ -83,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putString("displayText", display.getText().toString());
     }
+
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -93,14 +107,16 @@ public class MainActivity extends AppCompatActivity {
         String currentText = display.getText().toString();
         if (currentText.length() > 0 && isOperator(currentText.charAt(currentText.length() - 1)))
             display.setText(currentText.substring(0, currentText.length() - 1) + operator);
-         else
+        else
             display.append(operator);
         currentOperator = operator;
         isOperatorPressed = true;
     }
+
     private boolean isOperator(char character) {
         return character == '+' || character == '-' || character == '×' || character == '÷';
     }
+
     private void handleEqual() {
         if (display.getText().toString().isEmpty()) return;
 
